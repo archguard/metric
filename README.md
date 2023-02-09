@@ -34,8 +34,10 @@
 
 ### Quality: Test
 
-| 坏味道 | Name | Description | Reason |
-|-----|------|-------------|--------|-----|-----|
+已实现
+
+| Name | Description | Reason | 来源  |备注  |
+|-----|------|-------------|--------|-----|
 | 包含休眠的测试 | Sleepy Test | 测试中包含休眠，如 Thread.sleep() | 测试不稳定，不可重复 | 《重构》 |     |
 | 被忽略的测试 | Ignored Test | 测试被忽略，如 @Ignore | 测试不稳定，不可重复 | 《重构》 |     |
 | 缺乏校验的测试 | Unverified Test | 测试中没有校验，如 assert | 测试不稳定，不可重复 | 《重构》 |     |
@@ -43,16 +45,16 @@
 | 包含冗余打印的测试 | Redundant Print | 测试中包含冗余打印，如 System.out.println() | 测试不稳定，不可重复 | 《重构》 |     |
 | 静态方法测试 | Static Method Test | 测试中包含静态方法 | 测试不稳定，不可重复 | 《重构》 |     |
 
-Others:
+其它（未实现）:
 
+| Name | Description | Reason |  备注  |
+|-----|------|-------------|--------|
 | 依赖外部资源的测试 | External Resource Test | 测试中依赖外部资源，如数据库 | 测试不稳定，不可重复 | 《重构》 |     |
 
 
 ### Architecture Smell (Not Implemented Yet)
 
-Source: https://herbertograca.com/2017/07/05/software-architecture-premises/
-
-Zh-CN: https://www.jianshu.com/p/df295f92fb52
+来源: 《[Software Architecture Premises](https://herbertograca.com/2017/07/05/software-architecture-premises/)》  翻译: 《[软件架构预述](https://www.jianshu.com/p/df295f92fb52)》
 
 - 僵化(Rigidity)：如果软件难以修改是因为修改会导致更多关联修改，软件就是僵化的。它就会变成兔子洞：当我们以为修改快要完成时，突然发现还有更多的代码需要修改，把我们拉进无止尽的轮回之中。
 - 脆弱(Fragility)：脆弱的软件在修改时，总会出现意料之外的、毫无关联的、无法预测的错误。
